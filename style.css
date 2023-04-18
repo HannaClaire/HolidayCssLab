@@ -120,13 +120,14 @@ input {
 .container {
   display: grid;
   justify-content: center;
+  
   /* The destinations are enclosed in an article element that we want to make a grid */
   /* Set the display property to 'grid' and justify the content */
 }
 
 .row {
   grid-template-rows: auto;
-  grid-template-columns: 30%;
+  grid-template-columns: 30% 30% 30%;
 
   /* The row of the grid has 3 columns which should be the same width and roughly a third of the available space */
   /* Use the grid-template-columns property to set each column to 30% */
@@ -154,39 +155,72 @@ img {
   /* Set the max-width property to 100% */
 }
 
+.single-destination{
+display: flex;
+grid-template-columns: 30% 30% 30%;
+overflow: hidden;
+gap: 01rem;
+display: table-row;
+font-family: Arial, Helvetica, sans-serif;
+}
+
 /* Let's take the training wheels off. Finish off the page by adding styles to the remaining blocks */
 
 .testimonial-area {
-  /* Write your code here */
+background-color: grey;
+color: black;
+justify-content: center;
+gap: 5rem;
 }
 
+/* .single-destination > a {
+  width: 150px;
+}
+.single-destination > a > p {
+  width: 300px;
+  margin: auto;
+  display: flex;
+  
+} */
+
 .single-testmonial{
-  /* Write your code here */
+  gap: 500px;
 }
 
 .footer {
+  align-items: center;
+  background-color: #040E27;
+  color: #fff;
   /* Write your code here */
 }
 
 .footer-widget p {
+  color: aliceblue;
+  font-size: 15px;
   /* Write your code here */
 }
 
 .footer-widget a:hover {
+  color: #fff;
    /* Write your code here */
 }
 
-.footer-widget ul li {
-  /* Write your code here */
+.footer-widget ul li{
+  color: white;
+  list-style: none;
+  row-gap: 2rem;
 }
 
 .footer-widget a {
-   /* Write your code here */
+  color: white;
+  font-size: 12px;
+  justify-content: space-between;
 }
 
 /* Media Queries */
 
 @media (max-width: 720px) {
+    
     /* Add some responsive code here */
     /* Make the destinations stack on top of each other */
     /* Make the form input stack on top of each other */
