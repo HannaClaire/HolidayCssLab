@@ -119,12 +119,15 @@ input {
 
 .container {
   display: grid;
-  
+  justify-content: center;
   /* The destinations are enclosed in an article element that we want to make a grid */
   /* Set the display property to 'grid' and justify the content */
 }
 
 .row {
+  grid-template-rows: auto;
+  grid-template-columns: 30%;
+
   /* The row of the grid has 3 columns which should be the same width and roughly a third of the available space */
   /* Use the grid-template-columns property to set each column to 30% */
   /* You can experiment with different units for the width values */
@@ -132,11 +135,14 @@ input {
 }
 
 .section-title {
+  text-align: center;
   /* The <div> with class section-title contains an <h3> child which we want to center */
   /* The easiest way to center child elements is to set the display property to 'flex' and justify the content */
 }
 
 .single-destination {
+  margin: 2px;
+  overflow: hidden;
   /* Use the margin property to make some space between the destinations */
   /* Set the overflow to 'hidden' */
   /* The overflow CSS shorthand property sets the desired behaviour for an element's overflow 
@@ -144,6 +150,7 @@ input {
 }
 
 img {
+  max-width: 100%;
   /* Set the max-width property to 100% */
 }
 
